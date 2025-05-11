@@ -3,9 +3,10 @@
   padding: 0;
   margin: 0 auto;
   display: grid;
-  gap: 16px;
+  gap: 24px;
   max-width: 1200px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
 }
 
 .gallery-item {
@@ -20,8 +21,9 @@
 }
 
 .gallery-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 360px;
+  height: 200px;
+  aspect-ratio: unset;
   object-fit: cover;
   display: block;
   transition: transform 0.3s;
